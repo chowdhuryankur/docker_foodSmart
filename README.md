@@ -35,7 +35,7 @@ You have been contracted to build a simple recipe website that runs in a linux e
 1 Use Docker to serve the application (lnmp/lamp).
 2 Must have adequate documentation for other developers down the line should the client hire an in-house development team.
 
-### What am I delivering
+### What I am delivering
 - Put some menu in webpage, all menus are accessible. 
 - Only Recipes, Login and Signup pages are function dynamically.
 - I just try to full fill the Task Requirements.
