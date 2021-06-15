@@ -116,9 +116,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="<?=base_url('js/active.js')?>"></script>
 
     <script src="<?=base_url("js/plugins/jquery.star-rating-svg.js")?>"></script>
-
-    <?php if($manu['detailsReceipe'] == 'active') { ?>
+    <!-- summernote js -->
+    <script src="<?=base_url("js/summernote-lite.js")?>"></script>
     <script>
+    <?php if($manu['detailsReceipe'] == 'active') { ?>
         $(".my-rating").starRating({
             initialRating: <?=$rating?>,
             strokeColor: '#894A00',
@@ -132,8 +133,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 <?php } ?>
             }
         });
-    </script>
     <?php } ?>
-</body>
 
+    $('#details').summernote({
+        placeholder: 'Write task here....',
+        tabsize: 2,
+        height: 320,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear', 'strikethrough', 'superscript', 'subscript', 'underline']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+		  ['fontsize', ['fontsize']],
+          ['insert', ['link', 'picture']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+      });
+
+    </script>
+    
+</body>
 </html>

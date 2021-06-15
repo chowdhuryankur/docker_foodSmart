@@ -17,6 +17,7 @@
     <!-- Core Stylesheet -->
     <?php echo link_tag('css/star-rating-svg.css'); ?>
     <?php echo link_tag('style.css'); ?>
+    
 
 </head>
 <body>

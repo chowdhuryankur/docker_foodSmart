@@ -16,6 +16,7 @@
     <!-- Core Stylesheet -->
     <?php echo link_tag('css/star-rating-svg.css'); ?>
     <?php echo link_tag('style.css'); ?>
+    <?php echo link_tag('css/summernote-lite.css'); ?>
 
 </head>
 <body>
