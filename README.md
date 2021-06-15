@@ -1,5 +1,3 @@
-# docker_foodSmart
- 
 #  LAMP stack built with Docker Compose for  Foodsmart Inc.
 
 A basic LAMP stack environment built using Docker Compose. It consists of the following:
