@@ -133,7 +133,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 <?php } ?>
             }
         });
-    <?php } ?>
+    
+    <?php } if($manu['creatRecipe'] == 'active') { ?>
 
     $('#details').summernote({
         placeholder: 'Write task here....',
@@ -149,8 +150,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
           ['insert', ['link', 'picture']],
           ['view', ['fullscreen', 'codeview', 'help']]
         ]
-      });
-
+    });
+      <?php } ?>
     </script>
     
 </body>
